@@ -60,3 +60,45 @@ variance anomalies baked in.
 ![Anomaly](docs/anomaly_measurement_1.png)
 
 ## 📁 Project Structure
+
+    spc_system/
+    ├── core/
+    │   ├── schema.py              → Data contracts
+    │   ├── ingestion.py           → CSV loader + validator
+    │   ├── preprocessor.py        → Cleaning + OOS flagging
+    │   ├── charts/                → I-MR, X̄-R, CUSUM, EWMA
+    │   ├── capability/            → Cp, Cpk, Pp, Ppk dashboard
+    │   ├── rules/                 → 8 Western Electric rules
+    │   ├── anomaly/               → Drift, variance, ML detection
+    │   └── reporting/             → Alert engine + HTML report
+    ├── sample_data/               → Generated batch CSV
+    ├── tests/                     → Phase test scripts
+    ├── docs/                      → Screenshots
+    └── requirements.txt
+
+## 🚀 How to Run
+
+### 1. Install dependencies
+
+    pip install -r requirements.txt
+
+### 2. Generate sample data
+
+    python sample_data/generate_batches.py
+
+### 3. Run the full pipeline
+
+    python tests/test_phase6.py
+
+### 4. Open the HTML report
+
+    start data\processed\spc_report.html
+
+## 🤖 AI vs Automated — What's What
+
+| Component | Type |
+|---|---|
+| Control Charts, Cpk, WE Rules | Automated classical statistics |
+| Isolation Forest, One-Class SVM | Genuine unsupervised ML |
+| PELT Change-point Detection | Adaptive algorithm |
+| Full pipeline orchestration | Automated end-to-end |
