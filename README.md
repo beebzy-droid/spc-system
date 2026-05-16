@@ -13,8 +13,7 @@ variance anomalies baked in.
 
 ## 📊 Live App
 
-🔗 [View on Streamlit](https://your-app-link.streamlit.app)
-*(link will be updated after deployment)*
+🔗 [View on Streamlit](https://spc-system-gpjbtnqxqqxvy9fsqmddvp.streamlit.app/)
 
 ## 🛠️ Tech Stack
 
