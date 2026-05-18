@@ -1,5 +1,10 @@
 # 🏭 AI-Assisted Statistical Process Control (SPC) System
 
+![License: MIT](https://img.shields.io/badge/License-MIT-teal.svg)
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.51.0-red.svg)
+![Status](https://img.shields.io/badge/Status-Active-green.svg)
+
 A full end-to-end AI-assisted SPC system that detects out-of-spec
 batches, process drifts, and abnormal variance in batch manufacturing
 using classical statistics and machine learning.
@@ -101,3 +106,14 @@ variance anomalies baked in.
 | Isolation Forest, One-Class SVM | Genuine unsupervised ML |
 | PELT Change-point Detection | Adaptive algorithm |
 | Full pipeline orchestration | Automated end-to-end |
+
+## 📜 License & Attribution
+
+This project was built and designed by **beebzy-droid**.
+
+Licensed under the [MIT License](LICENSE) — you are free
+to use this code but must include attribution linking
+back to this repository.
+
+© 2026 beebzy-droid
+🔗 https://github.com/beebzy-droid/spc-system
